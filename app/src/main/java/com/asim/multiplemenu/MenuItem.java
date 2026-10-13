@@ -1,8 +1,10 @@
 package com.asim.multiplemenu;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -40,5 +42,24 @@ public class MenuItem extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.option_menu, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull android.view.MenuItem item) {
+        if (item.getItemId() == R.id.optionSearch) {
+            Intent intent = new Intent(MenuItem.this, OptionSearch.class);
+            startActivity(intent);
+            return true;
+        } else if (item.getItemId() == R.id.optionNotification) {
+            Intent intent = new Intent(MenuItem.this, OptionNotificationActivity.class);
+            startActivity(intent);
+            return true;
+        } else if (item.getItemId() == R.id.optionSettings) {
+            Intent intent = new Intent(MenuItem.this, OptionSettingsActivity.class);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
