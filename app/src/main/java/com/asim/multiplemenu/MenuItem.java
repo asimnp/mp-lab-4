@@ -78,4 +78,30 @@ public class MenuItem extends AppCompatActivity {
             inflater.inflate(R.menu.context_menu, menu);
         }
     }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull android.view.MenuItem item) {
+        if (item.getItemId() == R.id.context1) {
+            Intent intent = new Intent(MenuItem.this, Context1Activity.class);
+            startActivity(intent);
+            return true;
+        } else if (item.getItemId() == R.id.context2) {
+            Intent intent = new Intent(MenuItem.this, Context2Activity.class);
+            startActivity(intent);
+            return true;
+        } else if (item.getItemId() == R.id.context3) {
+            Intent intent = new Intent(MenuItem.this, Context3Activity.class);
+            startActivity(intent);
+            return true;
+        } else if (item.getItemId() == R.id.context4) {
+            Intent intent = new Intent(MenuItem.this, Context4Activity.class);
+            startActivity(intent);
+            return true;
+        } else if (item.getItemId() == R.id.context5) {
+            Intent intent = new Intent(MenuItem.this, Context5Activity.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onContextItemSelected(item);
+    }
 }

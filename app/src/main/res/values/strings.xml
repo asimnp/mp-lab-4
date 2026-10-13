@@ -17,4 +17,8 @@
     <string name="sql">SQL</string>
     <string name="visual_basic">Visual Basic</string>
     <string name="css">CSS</string>
+    <string name="context_1_typescript">Context 1: TypeScript</string>
+    <string name="context_2_bash_shell">Context 2: Bash Shell</string>
+    <string name="context_3_sql">Context 3: SQL</string>
+    <string name="context_5_css">Context 5: CSS</string>
 </resources>
