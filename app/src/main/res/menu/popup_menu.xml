@@ -10,7 +10,7 @@
     <item
         android:id="@+id/popup2"
         android:icon="@drawable/start_struck"
-        android:title="@string/start_struck"
+        android:title="@string/star_struck"
         app:showAsAction="ifRoom"
         />
     <item

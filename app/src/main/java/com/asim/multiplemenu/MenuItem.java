@@ -119,6 +119,27 @@ public class MenuItem extends AppCompatActivity {
         PopupMenu popupMenu = new PopupMenu(MenuItem.this, popupMenuButton);
         popupMenu.inflate(R.menu.popup_menu);
 
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(android.view.MenuItem item) {
+                if (item.getItemId() == R.id.popup1) {
+                    Intent intent = new Intent(MenuItem.this, Popup1Activity.class);
+                    startActivity(intent);
+                    return true;
+                } else if (item.getItemId() == R.id.popup2) {
+                    Intent intent = new Intent(MenuItem.this, Popup2Activity.class);
+                    startActivity(intent);
+                    return true;
+                } else if (item.getItemId() == R.id.popup3) {
+                    Intent intent = new Intent(MenuItem.this, Popup3Activity.class);
+                    startActivity(intent);
+                    return true;
+                }
+
+                return false;
+            }
+        });
+
         popupMenu.show();
     }
 }
