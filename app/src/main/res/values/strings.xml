@@ -6,4 +6,10 @@
     <string name="option_search_activity">Option Search Activity</string>
     <string name="option_notification_activity">Option Notification Activity</string>
     <string name="option_settings_activity">Option Settings Activity</string>
+    <string name="roger_image">Roger Image</string>
+    <string name="context_menu_hold"><![CDATA[Context Menu -> HOLD]]></string>
+    <string name="popup_menu_click"><![CDATA[Popup Menu -> Click]]></string>
+    <string name="straw_hat_crew">Straw Hat Crew</string>
+    <string name="ace">Ace</string>
+    <string name="shanks">Shanks</string>
 </resources>

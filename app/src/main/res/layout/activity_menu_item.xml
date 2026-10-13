@@ -12,6 +12,90 @@
         layout="@layout/layout_toolbar"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         />
+    <ImageView
+        android:id="@+id/img1"
+        android:src="@drawable/roger"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:contentDescription="@string/roger_image"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/lytToolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img2"
+        app:layout_constraintHorizontal_weight="1"
+        style="@style/AppImage"
+        />
+    <ImageView
+        android:id="@+id/img2"
+        android:src="@drawable/luffy"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:contentDescription="@string/straw_hat_crew"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/lytToolbar"
+        app:layout_constraintStart_toEndOf="@id/img1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        style="@style/AppImage"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/contentMenuBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/context_menu_hold"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/img1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/AppButton"
+        />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:src="@drawable/ace"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:contentDescription="@string/ace"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/contentMenuBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img4"
+        app:layout_constraintHorizontal_weight="1"
+        style="@style/AppImage"
+        />
+    <ImageView
+        android:id="@+id/img4"
+        android:src="@drawable/shank"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:contentDescription="@string/shanks"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/contentMenuBtn"
+        app:layout_constraintStart_toEndOf="@id/img3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="1"
+        style="@style/AppImage"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/popupMenuBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/popup_menu_click"
+        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@id/img3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        style="@style/AppButton"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
