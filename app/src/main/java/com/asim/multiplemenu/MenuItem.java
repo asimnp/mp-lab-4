@@ -25,5 +25,13 @@ public class MenuItem extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
         getSupportActionBar().setTitle("Multiple Menus");
+
+        // Show the back arrow
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        // Handle back arrow click
+        toolbar.setNavigationOnClickListener(v -> {
+            finish();
+        });
     }
 }
