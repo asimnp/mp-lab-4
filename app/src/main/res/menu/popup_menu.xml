@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/popup1"
+        android:icon="@drawable/hugging_face"
+        android:title="@string/hugging_face"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/popup2"
+        android:icon="@drawable/start_struck"
+        android:title="@string/start_struck"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/popup3"
+        android:icon="@drawable/partying_face"
+        android:title="@string/partying_face"
+        app:showAsAction="ifRoom"
+        />
+</menu>

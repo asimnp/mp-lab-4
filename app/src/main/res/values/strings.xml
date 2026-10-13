@@ -21,4 +21,7 @@
     <string name="context_2_bash_shell">Context 2: Bash Shell</string>
     <string name="context_3_sql">Context 3: SQL</string>
     <string name="context_5_css">Context 5: CSS</string>
+    <string name="partying_face">Partying Face</string>
+    <string name="start_struck">Start Struck</string>
+    <string name="hugging_face">Hugging Face</string>
 </resources>

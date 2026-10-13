@@ -10,11 +10,13 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.PopupMenu;
 import androidx.appcompat.widget.Toolbar;
 
 public class MenuItem extends AppCompatActivity {
     Toolbar toolbar;
     AppCompatButton contextMenuButton;
+    AppCompatButton popupMenuButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,11 +26,19 @@ public class MenuItem extends AppCompatActivity {
         findViews();
         initToolbar();
         registerForContextMenu(contextMenuButton);
+
+        popupMenuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showPopupMenu();
+            }
+        });
     }
 
     private void findViews() {
         toolbar = findViewById(R.id.toolbar);
         contextMenuButton = findViewById(R.id.contentMenuBtn);
+        popupMenuButton = findViewById(R.id.popupMenuBtn);
     }
 
     private void initToolbar() {
@@ -103,5 +113,12 @@ public class MenuItem extends AppCompatActivity {
             return true;
         }
         return super.onContextItemSelected(item);
+    }
+
+    private void showPopupMenu() {
+        PopupMenu popupMenu = new PopupMenu(MenuItem.this, popupMenuButton);
+        popupMenu.inflate(R.menu.popup_menu);
+
+        popupMenu.show();
     }
 }
