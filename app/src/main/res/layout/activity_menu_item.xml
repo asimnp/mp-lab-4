@@ -7,4 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".MenuItem">
 
+    <include
+        android:id="@+id/lytToolbar"
+        layout="@layout/layout_toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
