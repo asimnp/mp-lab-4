@@ -12,4 +12,9 @@
     <string name="straw_hat_crew">Straw Hat Crew</string>
     <string name="ace">Ace</string>
     <string name="shanks">Shanks</string>
+    <string name="typescript">TypeScript</string>
+    <string name="bash_shell">Bash Shell</string>
+    <string name="sql">SQL</string>
+    <string name="visual_basic">Visual Basic</string>
+    <string name="css">CSS</string>
 </resources>

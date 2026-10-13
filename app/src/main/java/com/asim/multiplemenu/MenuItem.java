@@ -2,14 +2,19 @@ package com.asim.multiplemenu;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.Toolbar;
 
 public class MenuItem extends AppCompatActivity {
     Toolbar toolbar;
+    AppCompatButton contextMenuButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,10 +23,12 @@ public class MenuItem extends AppCompatActivity {
 
         findViews();
         initToolbar();
+        registerForContextMenu(contextMenuButton);
     }
 
     private void findViews() {
         toolbar = findViewById(R.id.toolbar);
+        contextMenuButton = findViewById(R.id.contentMenuBtn);
     }
 
     private void initToolbar() {
@@ -61,5 +68,14 @@ public class MenuItem extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        if (v.getId() == R.id.contentMenuBtn) {
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.context_menu, menu);
+        }
     }
 }

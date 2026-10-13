@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/context1"
+        android:icon="@drawable/ts"
+        android:title="@string/typescript"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/context2"
+        android:icon="@drawable/bas"
+        android:title="@string/bash_shell"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/context3"
+        android:icon="@drawable/sql"
+        android:title="@string/sql"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/context4"
+        android:icon="@drawable/vb"
+        android:title="@string/visual_basic"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/context5"
+        android:icon="@drawable/css"
+        android:title="@string/css"
+        app:showAsAction="ifRoom"
+        />
+</menu>
